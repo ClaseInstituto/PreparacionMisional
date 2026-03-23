@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f8;
+  color: #2c3e50;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+header .sub {
+  font-size: 14px;
+  opacity: 0.9;
+  font-style: italic;
+}
+
+/* TABS */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: -15px;
+}
+
+.tab {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  background: #e0e6ed;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.tab.active {
+  background: #2a5298;
+  color: white;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+/* CONTENIDO */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* TARJETAS */
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  animation: fadeIn 0.4s ease;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  font-size: 12px;
+  padding: 20px;
+  color: #777;
+}
+
+/* ANIMACIÓN */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f8;
+  color: #2c3e50;
+}
+
+.container {
+  flex: 1;
+}
+
+.semana {
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
+
+.semana h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #2a5298;
+}
+
+.semana p {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
