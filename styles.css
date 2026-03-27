@@ -157,3 +157,9 @@ body {
   background: #1e3c72;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
